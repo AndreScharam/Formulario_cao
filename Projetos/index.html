@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulario.css">
+    <title>Formulario HTML</title>
+</head>
+<body>
+    <div class="Campo">
+        <h1 id="Titulo">Cadastro de Cachorros</h1>
+        <p id="Info">Complete as informações do cachorro:</p>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="Campo">
+                <label><strong >Nome do Cachorro</strong></label>
+                <input type="text" nome="nome" id="nome">
+            </div>
+
+            <div class="Campo">
+                <label><strong>Raça</strong></label>
+                <input type="text" nome="Raça" id="Raça">
+            </div>
+        
+
+            <div class="Campo">
+                <label><strong>Sexo do Cachoro</strong></label>
+                <label>
+                    <input type="radio" name="sexo" value="Macho"><strong>Macho</strong> 
+                </label>
+                <label>
+                    <input type="radio" name="sexo" value="Femia"><strong>Femia</strong> 
+                </label>
+            </div>
+
+            <div class="Campo">
+                <label><strong>Tempo de Vida</strong></label>
+                <select id="Tempo de Vida">
+                    <option>Menos de 1 Ano</option>
+                    <option>De 1 a 5 Anos</option>
+                    <option>De 5 a 10 Anos</option>
+                    <option>De 10 a 15 anos</option>
+                    <option>Mais de 15 anos</option>
+                </select>
+            </div>
+
+            <div class="Campo">
+                <br>
+                <label><strong>Conte um pouco sobre o cachorro</strong></label>
+                <Textarea row="6" style="width: 30em;" id="Comente" name="Comente"></Textarea>
+            </div>
+
+        </fieldset>
+
+        <p id="contato"><strong>Informações para Contato:</strong></p>
+            <fieldset class="grupo">
+                <div class="Check">
+                    <label><strong>Email:</strong></label>
+                    <input type="Email" name="Email" id="Email">
+
+                    <label><strong>Whatsapp:</strong></label>
+                    <input type="text" name="Whatsapp" id="Whatsapp">
+
+                    <label><strong>Telefone fixo:</strong> </label>
+                    <input type="text" name="Telefone" id="Telefone">
+                </div>
+            </fieldset>    
+
+        <button class="botao" type="submit">Concluir</button>
+    </form>
+    
+</body>
+</html>
